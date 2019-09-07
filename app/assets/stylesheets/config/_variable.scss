@@ -8,11 +8,11 @@ $message-background-color: #38AEF0 !default;
 $create-group-font-size: 16px !default;
 $create-group-color: white !default;
 
-$account-content-width: 300px !default;
-$account-content-height: 100px !default;
-$account-content-background-color: #253141 !default;
-$account-content-padding-vertical: 0 !default;
-$account-content-padding-horizontal: 20px !default;
+$account-width: 300px !default;
+$account-height: 100px !default;
+$account-background-color: #253141 !default;
+$account-padding-vertical: 0 !default;
+$account-padding-horizontal: 20px !default;
 
 $account-name-font-size: 16px !default;
 $account-name-font-weight: bold !default;
@@ -22,13 +22,13 @@ $edit-item-margin-left: 4.8px !default;
 
 $edit-link-color: #FFFFFF !default;
 
-$group-content-width: 300px !default;
-$group-content-height: calc(100% - #{$account-content-height}) !default;
-$group-content-background-color: #2F3E51 !default;
-$group-content-paddint-top: 20px !default;
-$group-content-paddint-right: 20px !default;
-$group-content-paddint-bottom: 0 !default;
-$group-content-paddint-left: 20px !default;
+$group-list-width: 300px !default;
+$group-list-height: calc(100% - #{$account-height}) !default;
+$group-list-background-color: #2F3E51 !default;
+$group-list-paddint-top: 20px !default;
+$group-list-paddint-right: 20px !default;
+$group-list-paddint-bottom: 0 !default;
+$group-list-paddint-left: 20px !default;
 
 $group-name-font-size: 15px !default;
 $group-name-color: #FFFFFF !default;

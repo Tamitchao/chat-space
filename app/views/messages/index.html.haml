@@ -1,24 +1,24 @@
 .message
-  .message__content
-    %p.message__content--create-group
-      グループを作成しました
+  %p.message--create-group
+    グループを作成しました
 
-.account-content
-  .account-content__account-name
+.account
+  .account__account-name
     account-name
-  #ul.account-content__edit-list
-    #li.account-content__edit-item
-      = link_to "#", class: "account-content__edit-link" do
+  #ul.account__edit-list
+    #li.account__edit-item
+      = link_to "#", class: "account__edit-link" do
         = fa_icon 'edit'
-    #li.account-content__edit-item
-      = link_to "#", class: "account-content__edit-link" do
+    #li.account__edit-item
+      = link_to "#", class: "account__edit-link" do
         = fa_icon 'cog'
 
-.group-content
-  #ul.group-content__group-list
+.group-list
+  #ul.group-list__group-list
     - 5.times do |i|
-      #li.group-content__group-item
-        #p.group-content__group-name
+      #li.group-list__group-item
+        #p.group-list__group-name
           group-name#{i}
-        #p.group-content__new-message
+        #p.group-list__new-message
           new-message#{i}
+
