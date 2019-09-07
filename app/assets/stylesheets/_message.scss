@@ -17,7 +17,7 @@ html, body {
 
 .account-content {
   width:  $account-content-width;
-  height: $account-content-hight;
+  height: $account-content-height;
   background-color: $account-content-background-color;
   padding: $account-content-padding-vertical $account-content-padding-horizontal;
   box-sizing: border-box;
@@ -38,5 +38,23 @@ html, body {
   &__edit-link {
     color: $edit-link-color;
     text-decoration: none ;
+  }
+}
+
+.group-content {
+  width: $group-content-width;
+  height: $group-content-height;
+  background-color: $group-content-background-color;
+  padding: $group-content-paddint-top $group-content-paddint-right $group-content-paddint-bottom $group-content-paddint-left;
+  box-sizing: border-box;
+  &__group-name {
+    font-size: $group-name-font-size;
+    color: $group-name-color;
+    margin-bottom: $group-name-margin-bottom;
+  }
+  &__new-message {
+    font-size: $new-message-font-size;
+    color: $new-message-color;
+    margin-bottom: $new-message-margin-bottom;
   }
 }
