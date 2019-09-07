@@ -7,8 +7,8 @@ html, body {
   height: $message-height;
   background-color: $message-background-color;
   &--create-group {
-    font-size: $create-group-font-size;
-    color: $create-group-color;
+    font-size: $message__create-group-font-size;
+    color: $message__create-group-color;
     text-align: center;
   }
 }
@@ -23,18 +23,18 @@ html, body {
   align-items: center;
   justify-content: space-between;
   &__account-name {
-    font-size: $account-name-font-size;
-    font-weight: $account-name-font-weight;
-    color: $account-name-color;
+    font-size: $account__account-name-font-size;
+    font-weight: $account__account-name-font-weight;
+    color: $account__account-name-color;
   }
   &__edit-list {
     display: flex;
   }
   &__edit-item {
-    margin-left: $edit-item-margin-left;
+    margin-left: $account__edit-item-margin-left;
   }
   &__edit-link {
-    color: $edit-link-color;
+    color: $account__edit-link-color;
     text-decoration: none ;
   }
 }
@@ -45,18 +45,50 @@ html, body {
   background-color: $group-list-background-color;
   padding: $group-list-paddint-top $group-list-paddint-right $group-list-paddint-bottom $group-list-paddint-left;
   box-sizing: border-box;
-  &__group-name {
-    font-size: $group-name-font-size;
-    color: $group-name-color;
-    margin-bottom: $group-name-margin-bottom;
+  &__group-item-name {
+    font-size: $group-list__group-item-name-font-size;
+    color: $group-list__group-item-name-color;
+    margin-bottom: $group-list__group-item-name-margin-bottom;
   }
   &__new-message {
-    font-size: $new-message-font-size;
-    color: $new-message-color;
-    margin-bottom: $new-message-margin-bottom;
+    font-size: $group-list__new-message-font-size;
+    color: $group-list__new-message-color;
+    margin-bottom: $group-list__new-message-margin-bottom;
+  }
+  &__group-link {
+    text-decoration: none ;
   }
 }
 
 .group {
-
+  width: $group-width;
+  height: $group-height;
+  padding: $group__padding-vertical $group__padding-horizontal;
+  &__group-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__group-name {
+    font-size: $group__group-name-font-size;
+    color: $group__group-name-color;
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+  &__edit-link {
+    display: inline-block;
+    height: $group__edit-link-height;
+    line-height: $group__edit-link-line-height;
+    padding: $group-edit-link-padding-vertical $group-edit-link-padding-horizontal;
+    margin-top: $group-edit-link-margin-top;
+    border: $group-edit-link-border-solid $group-edit-link-border-width $group-edit-link-border-color;
+    color: $group-edit-link-color;
+    text-decoration: none ;
+  }
+  &__member-list {
+    display: flex;
+    color: #999999;
+  }
+  &__member-item {
+    margin-right: 4.8px;
+  }
 }

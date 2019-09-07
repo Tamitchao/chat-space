@@ -5,8 +5,8 @@
 $message-height: 24px !default;
 $message-background-color: #38AEF0 !default;
 
-$create-group-font-size: 16px !default;
-$create-group-color: white !default;
+$message__create-group-font-size: 16px !default;
+$message__create-group-color: white !default;
 
 $account-width: 300px !default;
 $account-height: 100px !default;
@@ -14,13 +14,13 @@ $account-background-color: #253141 !default;
 $account-padding-vertical: 0 !default;
 $account-padding-horizontal: 20px !default;
 
-$account-name-font-size: 16px !default;
-$account-name-font-weight: bold !default;
-$account-name-color: #FFFFFF !default;
+$account__account-name-font-size: 16px !default;
+$account__account-name-font-weight: bold !default;
+$account__account-name-color: #FFFFFF !default;
 
-$edit-item-margin-left: 4.8px !default;
+$account__edit-item-margin-left: 4.8px !default;
 
-$edit-link-color: #FFFFFF !default;
+$account__edit-link-color: #FFFFFF !default;
 
 $group-list-width: 300px !default;
 $group-list-height: calc(100% - #{$account-height}) !default;
@@ -30,10 +30,29 @@ $group-list-paddint-right: 20px !default;
 $group-list-paddint-bottom: 0 !default;
 $group-list-paddint-left: 20px !default;
 
-$group-name-font-size: 15px !default;
-$group-name-color: #FFFFFF !default;
-$group-name-margin-bottom: 5px !default;
+$group-list__group-item-name-font-size: 15px !default;
+$group-list__group-item-name-color: #FFFFFF !default;
+$group-list__group-item-name-margin-bottom: 5px !default;
 
-$new-message-font-size: 11px !default;
-$new-message-color: #FFFFFF !default;
-$new-message-margin-bottom: 40px !default;
+$group-list__new-message-font-size: 11px !default;
+$group-list__new-message-color: #FFFFFF !default;
+$group-list__new-message-margin-bottom: 40px !default;
+
+$group__padding-vertical: 0 !default;
+$group__padding-horizontal: 40px !default;
+
+$group-width: calc(100% - 300px) !default;
+$group-height: 100px !default;
+
+$group__group-name-font-size: 20px !default;
+$group__group-name-color: #333333 !default;
+
+$group__edit-link-height: 40px !default;
+$group__edit-link-line-height: $group__edit-link-height !default;
+$group-edit-link-padding-vertical: 0 !default;
+$group-edit-link-padding-horizontal: 20px !default;
+$group-edit-link-margin-top: 28px !default;
+$group-edit-link-border-solid: solid !default;
+$group-edit-link-border-width: 1px !default;
+$group-edit-link-border-color: #38AEF0 !default;
+$group-edit-link-color: #38AEF0 !default;

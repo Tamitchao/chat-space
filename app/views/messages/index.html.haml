@@ -5,20 +5,33 @@
 .account
   .account__account-name
     account-name
-  #ul.account__edit-list
-    #li.account__edit-item
+  %ul.account__edit-list
+    %li.account__edit-item
       = link_to "#", class: "account__edit-link" do
         = fa_icon 'edit'
-    #li.account__edit-item
+    %li.account__edit-item
       = link_to "#", class: "account__edit-link" do
         = fa_icon 'cog'
 
 .group-list
-  #ul.group-list__group-list
+  %ul.group-list__group-list
     - 5.times do |i|
-      #li.group-list__group-item
-        #p.group-list__group-name
-          group-name#{i}
-        #p.group-list__new-message
-          new-message#{i}
+      = link_to "#", class: "group-list__group-link" do
+        %li.group-list__group-item
+          %p.group-list__group-item-name
+            group-name#{i}
+          %p.group-list__new-message
+            new-message#{i}
 
+.group
+  .group__group-content
+    %p.group__group-name
+      group-name3
+    = link_to "#", class: "group__edit-link" do
+      Edit
+  .group__member-content
+    %ul.group__member-list
+      Member：
+      - 5.times do |i|
+        %li.group__member-item
+          member-#{i}
