@@ -3,6 +3,12 @@
     %p.message__content--create-group
       グループを作成しました
 
-.left-contents
-  .left-contents__up-content
-  .left-contents__down-content
+.account-content
+  .account-content__account-name
+    account-name
+  .account-content__edit
+    = link_to "#", class: "account-content__edit--link" do
+      = fa_icon 'edit'
+    = link_to "#", class: "account-content__edit--link" do
+      = fa_icon 'cog'
+    
