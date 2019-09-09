@@ -13,14 +13,14 @@
       = link_to "#", class: "account__edit-link" do
         = fa_icon 'cog'
 
-.group-list
-  %ul.group-list__group-list
+.groups
+  %ul.groups__group-list
     - 5.times do |i|
-      = link_to "#", class: "group-list__group-link" do
-        %li.group-list__group-item
-          %p.group-list__group-item-name
+      = link_to "#", class: "groups__group-link" do
+        %li.groups__group-item
+          %p.groups__group-item-name
             group-name#{i}
-          %p.group-list__new-message
+          %p.groups__new-message
             new-message#{i}
 
 .group
@@ -35,3 +35,15 @@
       - 5.times do |i|
         %li.group__member-item
           member-#{i}
+
+.messages
+  %ul.messages__message-list
+    - 3.times do |i|
+      %li.messages__message-item
+        .messages__sub-info
+          .messages__user-name
+            user-name#{i}
+          .messages__post-date
+            2019/09/05(Thu) 06:53:27
+        .messages__main-info
+          こんにちは！

@@ -39,21 +39,21 @@ html, body {
   }
 }
 
-.group-list{
-  width: $group-list-width;
-  height: $group-list-height;
-  background-color: $group-list-background-color;
-  padding: $group-list-paddint-top $group-list-paddint-right $group-list-paddint-bottom $group-list-paddint-left;
+.groups{
+  width: $groups-width;
+  height: $groups-height;
+  background-color: $groups-background-color;
+  padding: $groups-paddint-top $groups-paddint-right $groups-paddint-bottom $groups-paddint-left;
   box-sizing: border-box;
   &__group-item-name {
-    font-size: $group-list__group-item-name-font-size;
-    color: $group-list__group-item-name-color;
-    margin-bottom: $group-list__group-item-name-margin-bottom;
+    font-size: $groups__group-item-name-font-size;
+    color: $groups__group-item-name-color;
+    margin-bottom: $groups__group-item-name-margin-bottom;
   }
   &__new-message {
-    font-size: $group-list__new-message-font-size;
-    color: $group-list__new-message-color;
-    margin-bottom: $group-list__new-message-margin-bottom;
+    font-size: $groups__new-message-font-size;
+    color: $groups__new-message-color;
+    margin-bottom: $groups__new-message-margin-bottom;
   }
   &__group-link {
     text-decoration: none ;
@@ -64,6 +64,7 @@ html, body {
   width: $group-width;
   height: $group-height;
   padding: $group__padding-vertical $group__padding-horizontal;
+  box-sizing: border-box;
   &__group-content {
     display: flex;
     justify-content: space-between;
@@ -90,5 +91,22 @@ html, body {
   }
   &__member-item {
     margin-right: 4.8px;
+  }
+}
+
+.messages {
+  width: $messages-width;
+  height: $messages-height;
+  padding: 46px 40px 0 40px;
+  box-sizing: border-box;
+  &__sub-info {
+    display: flex;
+  }
+  &__post-date {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  &__main-info {
+    margin-bottom: 40px;
   }
 }
