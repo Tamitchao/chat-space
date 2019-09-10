@@ -32,7 +32,7 @@
   .group__member-content
     %ul.group__member-list
       Member：
-      - 5.times do |i|
+      - 3.times do |i|
         %li.group__member-item
           member-#{i}
 
@@ -47,3 +47,13 @@
             2019/09/05(Thu) 06:53:27
         .messages__main-info
           こんにちは！
+
+.message-send
+  %form{ action: "/", method: "post", class: "message-send__form"}
+    .message-send__overlap-elements
+      %input{ type: "text", placeholder: "type a message", class: "message-send__input-text" }
+      %label{ class: "message-send__file-label" }
+        %span{ class: "message-send__file-icon" }
+          = fa_icon 'image', class: "fa-lg"
+        %input{ type: "file", class: "message-send__file-hidden", accept: ".jpg,.gif,.png,image/gif,image/jpeg,image/png" }
+    %input{ type: "submit", value: "Send", class: "message-send__submit" }
