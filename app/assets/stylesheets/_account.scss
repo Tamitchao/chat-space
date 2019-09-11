@@ -1,0 +1,25 @@
+.account {
+  width:  $account-width;
+  height: $account-height;
+  background-color: $account-background-color;
+  padding: $account-padding-vertical $account-padding-horizontal;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__account-name {
+    font-size: $account__account-name-font-size;
+    font-weight: $account__account-name-font-weight;
+    color: $account__account-name-color;
+  }
+  &__edit-list {
+    display: flex;
+  }
+  &__edit-item {
+    margin-left: $account__edit-item-margin-left;
+  }
+  &__edit-link {
+    color: $account__edit-link-color;
+    text-decoration: none ;
+  }
+}

@@ -1,0 +1,41 @@
+.message-send {
+  width: $message-send-width;
+  height: $message-send-height;
+  background-color: $message-send-background-color;
+  padding: $message-send-padding-vertical $message-send-padding-horizontal;
+  box-sizing: border-box;
+  &__form {
+    display: flex;
+  }
+  &__overlap-elements {
+    width: $message-send-padding__overlap-elements-width;
+    height: $message-send-padding__overlap-elements-height;
+    position: relative;
+  }
+  &__input-text {
+    width: $message-send-padding__input-text-width;
+    height: $message-send-padding__input-text-height;
+    padding-left: $message-send-padding__input-text-padding-left;
+    padding-right: $message-send-padding__input-text-padding-right;
+    box-sizing: border-box;
+  }
+  &__file-label {
+    display: inline-block;
+    position: absolute;
+    transform: translateY($message-send-padding__file-label-transform);
+    top: $message-send-padding__file-label-top;
+    right: $message-send-padding__file-label-right;
+    cursor: pointer;
+  }
+  &__file-hidden {
+    display: none;
+  }
+  &__submit {
+    background-color: $message-send-padding__submit-background-color;
+    color: $message-send-padding__submit-color;
+    font-size: $message-send-padding__submit-font-size;
+    padding: $message-send-padding__submit-padding-vertical $message-send-padding__submit-padding-horizontal;
+    margin-left: $message-send-padding__submit-margin-left;
+    cursor: pointer;
+  }
+}

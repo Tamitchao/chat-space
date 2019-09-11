@@ -1,0 +1,33 @@
+.group {
+  width: $group-width;
+  height: $group-height;
+  padding: $group__padding-vertical $group__padding-horizontal;
+  box-sizing: border-box;
+  &__group-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__group-name {
+    font-size: $group__group-name-font-size;
+    color: $group__group-name-color;
+    margin-top: $group__group-name-margin-top;
+    margin-bottom: $group__group-name-margin-bottom;
+  }
+  &__edit-link {
+    display: inline-block;
+    height: $group__edit-link-height;
+    line-height: $group__edit-link-line-height;
+    padding: $group__edit-link-padding-vertical $group__edit-link-padding-horizontal;
+    margin-top: $group__edit-link-margin-top;
+    border: $group__edit-link-border-solid $group__edit-link-border-width $group__edit-link-border-color;
+    color: $group__edit-link-color;
+    text-decoration: none ;
+  }
+  &__member-list {
+    display: flex;
+    color: $group__member-list-color;
+  }
+  &__member-item {
+    margin-right: $group__member-item-margin-right;
+  }
+}

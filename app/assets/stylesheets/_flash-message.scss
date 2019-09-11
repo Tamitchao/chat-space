@@ -1,0 +1,9 @@
+.flash-message {
+  height: $flash-message-height;
+  background-color: $flash-message-background-color;
+  &--create-group {
+    font-size: $flash-message__create-group-font-size;
+    color: $flash-message__create-group-color;
+    text-align: center;
+  }
+}

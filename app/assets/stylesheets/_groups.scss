@@ -1,0 +1,20 @@
+.groups{
+  width: $groups-width;
+  height: $groups-height;
+  background-color: $groups-background-color;
+  padding: $groups-paddint-top $groups-paddint-right $groups-paddint-bottom $groups-paddint-left;
+  box-sizing: border-box;
+  &__group-item-name {
+    font-size: $groups__group-item-name-font-size;
+    color: $groups__group-item-name-color;
+    margin-bottom: $groups__group-item-name-margin-bottom;
+  }
+  &__new-message {
+    font-size: $groups__new-message-font-size;
+    color: $groups__new-message-color;
+    margin-bottom: $groups__new-message-margin-bottom;
+  }
+  &__group-link {
+    text-decoration: none ;
+  }
+}
