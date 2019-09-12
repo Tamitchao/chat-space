@@ -22,6 +22,7 @@
     border: $group__edit-link-border-solid $group__edit-link-border-width $group__edit-link-border-color;
     color: $group__edit-link-color;
     text-decoration: none ;
+    box-sizing: border-box;
   }
   &__member-list {
     display: flex;
