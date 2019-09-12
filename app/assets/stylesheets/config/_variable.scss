@@ -7,7 +7,9 @@ $flash-message-background-color: #38AEF0 !default;
 $flash-message__create-group-font-size: 16px !default;
 $flash-message__create-group-color: white !default;
 
-$account-width: 300px !default;
+$split-screen__left-content-width: 300px !default;
+$split-screen__right-content-width: calc(100% - 300px) !default;
+
 $account-height: 100px !default;
 $account-background-color: #253141 !default;
 $account-padding-vertical: 0 !default;
@@ -18,7 +20,6 @@ $account__account-name-color: #FFFFFF !default;
 $account__edit-item-margin-left: 4.8px !default;
 $account__edit-link-color: #FFFFFF !default;
 
-$groups-width: 300px !default;
 $groups-height: calc(100% - 100px) !default;
 $groups-background-color: #2F3E51 !default;
 $groups-paddint-top: 20px !default;
@@ -35,7 +36,6 @@ $groups__new-message-margin-bottom: 40px !default;
 $group__padding-vertical: 0 !default;
 $group__padding-horizontal: 40px !default;
 
-$group-width: calc(100% - 300px) !default;
 $group-height: 100px !default;
 $group__group-name-font-size: 20px !default;
 $group__group-name-color: #333333 !default;
@@ -53,8 +53,7 @@ $group__edit-link-color: #38AEF0 !default;
 $group__member-list-color: #999999 !default;
 $group__member-item-margin-right: 4.8px !default;
 
-$messages-width: calc(100% - 300px) !default;
-$messages-height: calc(100% - 300px - 90px) !default;
+$messages-height: calc(100% - 90px - 100px) !default;
 $messages-padding-top: 46px !default;
 $messages-padding-right: 40px !default;
 $messages-padding-bottom: 0 !default;

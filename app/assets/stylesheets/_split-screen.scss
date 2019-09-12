@@ -1,0 +1,10 @@
+.split-screen {
+  height: 100%;
+  display: flex;
+  &__left-content {
+    width: $split-screen__left-content-width;
+  }
+  &__right-content {
+    width: $split-screen__right-content-width;
+  }
+}
