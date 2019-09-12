@@ -61,7 +61,7 @@ $group__member-item-margin-right: 4.8px;
 
 // message BEM
 $message-send-height: 90px;
-$message-send-background-color: #DDDDDD;
+$message-send-background-color: #DDD;
 $message-send-padding-vertical: 20px;
 $message-send-padding-horizontal: 40px;
 $message-send-padding__overlap-elements-width: 100%;
@@ -83,6 +83,7 @@ $message-send-padding__submit-margin-left: 15px;
 
 // messages BEM
 $messages-height: calc(100% - #{$group-height} - #{$message-send-height});
+$messages-background-color: #FAFAFA;
 $messages-padding-top: 46px;
 $messages-padding-right: 40px;
 $messages-padding-bottom: 0;

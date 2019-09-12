@@ -1,5 +1,6 @@
 .messages {
   height: $messages-height;
+  background-color: $messages-background-color;
   padding: $messages-padding-top $messages-padding-right $messages-padding-bottom $messages-padding-left;
   box-sizing: border-box;
   &__sub-info {
