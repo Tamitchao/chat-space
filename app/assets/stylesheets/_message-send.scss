@@ -16,6 +16,7 @@
     height: $message-send-padding__input-text-height;
     padding-left: $message-send-padding__input-text-padding-left;
     padding-right: $message-send-padding__input-text-padding-right;
+    border: none;
     box-sizing: border-box;
   }
   &__file-label {
@@ -30,6 +31,7 @@
     display: none;
   }
   &__submit {
+    width: $message-send-padding__submit-width;
     background-color: $message-send-padding__submit-background-color;
     color: $message-send-padding__submit-color;
     font-size: $message-send-padding__submit-font-size;
