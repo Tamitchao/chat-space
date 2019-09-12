@@ -1,10 +1,13 @@
+-# フラッシュメッセージ
 .flash-message
   %p.flash-message--create-group
     グループを作成しました
 
+-# 画面分割
 .split-screen
+  -# 左画面
   .split-screen__left-content
-
+    -# アカウント情報
     .account
       .account__account-name
         account-name
@@ -15,7 +18,7 @@
         %li.account__edit-item
           = link_to "#", class: "account__edit-link" do
             = fa_icon 'cog'
-
+    -# グループ一覧
     .groups
       %ul.groups__group-list
         - 5.times do |i|
@@ -25,8 +28,9 @@
                 group-name#{i}
               %p.groups__new-message
                 new-message#{i}
-
+  -# 右画面
   .split-screen__right-content
+    -# グループ詳細
     .group
       .group__group-content
         %p.group__group-name
@@ -39,7 +43,7 @@
           - 3.times do |i|
             %li.group__member-item
               member-#{i}
-
+    -# メッセージ一覧
     .messages
       %ul.messages__message-list
         - 3.times do |i|
@@ -51,7 +55,7 @@
                 2019/09/05(Thu) 06:53:27
             .messages__main-info
               こんにちは！
-
+    -# メッセージ送信フォーム
     .message-send
       %form{ action: "/", method: "post", class: "message-send__form"}
         .message-send__overlap-elements
