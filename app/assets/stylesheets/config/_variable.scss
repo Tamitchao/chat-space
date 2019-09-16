@@ -1,0 +1,93 @@
+// -------------------------------------------------
+// chat screen variables
+// -------------------------------------------------
+
+
+// flash-message Block
+$flash-message-height: 24px;
+$flash-message-background-color: #38AEF0;
+$flash-message__create-group-font-size: 16px;
+$flash-message__create-group-color: white;
+
+// split-screen BEM
+$split-screen__left-content-width: 300px;
+$split-screen__right-content-width: calc(100% - #{$split-screen__left-content-width});
+
+// account BEM
+$account-height: 100px;
+$account-background-color: #253141;
+$account-padding-vertical: 0;
+$account-padding-horizontal: 20px;
+$account__account-name-font-size: 16px;
+$account__account-name-font-weight: bold;
+$account__account-name-color: white;
+$account__edit-item-margin-left: 4.8px;
+$account__edit-link-color: white;
+
+// groups BEM
+$groups-height: calc(100% - #{$account-height});
+$groups-background-color: #2F3E51;
+$groups-paddint-top: 20px;
+$groups-paddint-right: 20px;
+$groups-paddint-bottom: 0;
+$groups-paddint-left: 20px;
+$groups__group-item-name-font-size: 15px;
+$groups__group-item-name-color: white;
+$groups__group-item-name-margin-bottom: 5px;
+$groups__new-message-font-size: 11px;
+$groups__new-message-color: white;
+$groups__new-message-margin-bottom: 40px;
+$group__padding-vertical: 0;
+$group__padding-horizontal: 40px;
+
+// group BEM
+$group-height: 100px;
+$group__group-name-font-size: 20px;
+$group__group-name-color: #333333;
+$group__group-name-margin-top: 35px;
+$group__group-name-margin-bottom: 15px;
+$group__edit-link-height: 40px;
+$group__edit-link-line-height: $group__edit-link-height;
+$group__edit-link-padding-vertical: 0;
+$group__edit-link-padding-horizontal: 20px;
+$group__edit-link-margin-top: 28px;
+$group__edit-link-border-solid: solid;
+$group__edit-link-border-width: 1px;
+$group__edit-base-color: #38AEF0;
+$group__edit-link-border-color: $group__edit-base-color;
+$group__edit-link-color: $group__edit-base-color;
+$group__member-list-color: #999999;
+$group__member-item-margin-right: 4.8px;
+
+// message BEM
+$message-send-height: 90px;
+$message-send-background-color: #DDD;
+$message-send-padding-vertical: 20px;
+$message-send-padding-horizontal: 40px;
+$message-send-padding__overlap-elements-width: 100%;
+$message-send-padding__overlap-elements-height: 50px;
+$message-send-padding__input-text-width: 100%;
+$message-send-padding__input-text-height: 100%;
+$message-send-padding__input-text-padding-left: 10px;
+$message-send-padding__input-text-padding-right: 40px;
+$message-send-padding__file-label-transform: -50%;
+$message-send-padding__file-label-top: 50%;
+$message-send-padding__file-label-right: 10px;
+$message-send-padding__submit-width: 100px;
+$message-send-padding__submit-background-color: #38AEF0;
+$message-send-padding__submit-color: white;
+$message-send-padding__submit-font-size: 16px;
+$message-send-padding__submit-padding-vertical: 0;
+$message-send-padding__submit-padding-horizontal: 30px;
+$message-send-padding__submit-margin-left: 15px;
+
+// messages BEM
+$messages-height: calc(100% - #{$group-height} - #{$message-send-height});
+$messages-background-color: #FAFAFA;
+$messages-padding-top: 46px;
+$messages-padding-right: 40px;
+$messages-padding-bottom: 0;
+$messages-padding-left: 40px;
+$messages__post-date-margin-left: 10px;
+$messages__post-date-margin-bottom: 10px;
+$messages__main-info-margin-bottom: 40px;

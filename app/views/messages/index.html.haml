@@ -1,0 +1,67 @@
+-# フラッシュメッセージ
+.flash-message
+  %p.flash-message--create-group
+    グループを作成しました
+
+-# 画面分割
+.split-screen
+  -# 左画面
+  .split-screen__left-content
+    -# アカウント情報
+    .account
+      .account__account-name
+        account-name
+      %ul.account__edit-list
+        %li.account__edit-item
+          = link_to "#", class: "account__edit-link" do
+            = fa_icon 'edit'
+        %li.account__edit-item
+          = link_to "#", class: "account__edit-link" do
+            = fa_icon 'cog'
+    -# グループ一覧
+    .groups
+      %ul.groups__group-list
+        - 5.times do |i|
+          = link_to "#", class: "groups__group-link" do
+            %li.groups__group-item
+              %p.groups__group-item-name
+                group-name#{i}
+              %p.groups__new-message
+                new-message#{i}
+  -# 右画面
+  .split-screen__right-content
+    -# グループ詳細
+    .group
+      .group__group-content
+        %p.group__group-name
+          group-name3
+        = link_to "#", class: "group__edit-link" do
+          Edit
+      .group__member-content
+        %ul.group__member-list
+          Member：
+          - 3.times do |i|
+            %li.group__member-item
+              member-#{i}
+    -# メッセージ一覧
+    .messages
+      %ul.messages__message-list
+        - 3.times do |i|
+          %li.messages__message-item
+            .messages__sub-info
+              .messages__user-name
+                user-name#{i}
+              .messages__post-date
+                2019/09/05(Thu) 06:53:27
+            .messages__main-info
+              こんにちは！
+    -# メッセージ送信フォーム
+    .message-send
+      %form{ action: "/", method: "post", class: "message-send__form"}
+        .message-send__overlap-elements
+          %input{ type: "text", placeholder: "type a message", class: "message-send__input-text" }
+          %label{ class: "message-send__file-label" }
+            %span{ class: "message-send__file-icon" }
+              = fa_icon 'image', class: "fa-lg"
+            %input{ type: "file", class: "message-send__file-hidden", accept: ".jpg,.gif,.png,image/gif,image/jpeg,image/png" }
+        %input{ type: "submit", value: "Send", class: "message-send__submit" }

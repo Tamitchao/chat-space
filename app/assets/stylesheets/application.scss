@@ -1,0 +1,15 @@
+@import "./reset";
+@import "font-awesome";
+@import "./config/variable";
+@import "./flash-message";
+@import "./split-screen";
+@import "./account";
+@import "./groups";
+@import "./group";
+@import "./messages";
+@import "./message-send";
+
+html, body {
+  width:  100%;
+  height: 100%;
+}
