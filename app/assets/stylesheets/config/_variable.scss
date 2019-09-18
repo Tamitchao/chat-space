@@ -3,11 +3,15 @@
 // -------------------------------------------------
 
 
-// flash-message Block
-$flash-message-height: 24px;
-$flash-message-background-color: #38AEF0;
-$flash-message__create-group-font-size: 16px;
-$flash-message__create-group-color: white;
+// flash-message BEM
+$flash-message--notice-height: 24px;
+$flash-message--notice-background-color: #38AEF0;
+$flash-message--notice-font-size: 16px;
+$flash-message--notice-color: white;
+$flash-message--alert-height: 24px;
+$flash-message--alert-background-color: #F35500;
+$flash-message--alert-font-size: 16px;
+$flash-message--alert-color: white;
 
 // split-screen BEM
 $split-screen__left-content-width: 300px;

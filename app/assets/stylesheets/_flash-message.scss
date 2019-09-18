@@ -1,9 +1,16 @@
 .flash-message {
-  height: $flash-message-height;
-  background-color: $flash-message-background-color;
-  &--create-group {
-    font-size: $flash-message__create-group-font-size;
-    color: $flash-message__create-group-color;
+  &--notice {
+    height: $flash-message--notice-height;
+    background-color: $flash-message--notice-background-color;
+    font-size: $flash-message--notice-font-size;
+    color: $flash-message--notice-color;
+    text-align: center;
+  }
+  &--alert {
+    height: $flash-message--alert-height;
+    background-color: $flash-message--alert-background-color;
+    font-size: $flash-message--alert-font-size;
+    color: $flash-message--alert-color;
     text-align: center;
   }
 }
